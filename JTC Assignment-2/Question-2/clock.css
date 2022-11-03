@@ -1,0 +1,77 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    padding-top:50px;
+}
+
+
+
+body {
+    border: 8px solid rgb(221, 249, 95);
+    border-radius: 20px;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    background: blue url('/Question-2/images\ \(7\).jpeg') no-repeat fixed center;
+    background-size: 100% 100%;
+}
+
+#clock {
+    height:120px;
+    font-size: 40px;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  color: rgb(100, 250, 0);
+}
+
+h2 {
+	text-align:center;
+  
+
+}
+
+#alarm-container {
+	text-align:center;
+    font-family: Verdana;
+    font-size: 0.6em;
+    padding: 0.7em;
+  color: rgb(1, 253, 224);
+}
+
+label {
+	display:inline-block;
+}
+
+.timeofday {
+    background-color: rgb(85, 252, 8);
+}
+
+.bigger {
+    font-weight:bold;
+    font-size: 18px;
+}
+
+#sounds {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#setButton {
+    float:left;
+    background-color:rgb(5, 250, 5);
+    margin-top:10px;
+}
+#clearButton {
+    float:right;
+    background-color:red;
+    margin-top:10px;
+}
+
+
+

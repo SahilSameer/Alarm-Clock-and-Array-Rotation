@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Rotation</title>
+  </head>
+  <script>
+    function Rotate_and_Print(arr, d, n) {
+      //Initializing array temp with size n
+      var temp = new Array(n);
+
+      let k = 0;
+
+      // Storing the n - d elements of
+      // array arr[] to the front of temp[]
+      for (let i = d; i < n; i++) {
+        temp[k] = arr[i];
+        k++;
+      }
+
+      // Storing the first d elements of array arr[]
+      // into temp
+      for (let i = 0; i < d; i++) {
+        temp[k] = arr[i];
+        k++;
+      }
+      //Printing the temp array which stores the result
+      for (let i = 0; i < n; i++) {
+        console.log(temp[i] + " ");
+      }
+    }
+
+    let arr = [1, 3, 2, 7, 4, 6];
+    let n = arr.length;
+    let d = 3; //number of times rotating the array
+    Rotate_and_Print(arr, d, n);
+  </script>
+  <body></body>
+</html>
